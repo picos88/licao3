@@ -1,0 +1,43 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API de encurtador de URL",
+    "description": "Essa API tem como obetivo a Ativide 04",
+    "termsOfService": "http://localhost:3000/terms",
+    "contact": {
+      "email": "saamuel.193@gmail.com"
+    },
+    "version":"1.0.0"
+  },
+   "servers": [
+     {
+       "url": "http://localhost/3000/v1",
+       "description": "API de Teste"
+     }
+    ],
+      "paths": {
+        "/products": {
+          "post" : {
+            "summary" : "Inclusao de URL",
+            "description" :"Esta Rota gera o encpsulamento da url",
+            "tags": ["Products"],
+            "requestBody": {
+              "content": {
+                 "application/json": {
+                   "schema": {
+                     "properties": {
+                       "rota":{
+                         "type": "string"
+                       }
+                     }
+                   }
+                  
+                 }
+              }
+
+            }
+          }
+        }
+      }
+
+    }   
